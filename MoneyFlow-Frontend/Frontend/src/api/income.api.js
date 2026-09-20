@@ -1,4 +1,6 @@
-// Income API layer — placeholder.
-// Wire up real HTTP calls here (e.g. using the shared client from "@/api/client.js")
-// once the backend endpoints for this module are available.
-export default {};
+﻿import api from "./axios.api";
+
+export const getIncome = () => api.get("/income");
+export const createIncome = (incomeData) => api.post("/income", incomeData);
+export const updateIncome = (id, incomeData) => api.put(`/income/${id}`, incomeData);
+export const deleteIncome = (id) => api.delete(`/income/${id}`);

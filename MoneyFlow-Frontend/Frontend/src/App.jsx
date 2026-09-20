@@ -6,16 +6,6 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 
 
-
-
-
-
-
-
-
-
-
-
 export default function App() {
 
   const dispatch = useDispatch()
